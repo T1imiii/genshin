@@ -1,1 +1,188 @@
-/* Add styles here */
+/* General Styling */
+body {
+    font-family: sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    margin: 0;
+    overflow: hidden; /* Prevent body scroll */
+    background-image: url('https://webstatic.hoyoverse.com/upload/event/2022/09/25/e764126365b99395d97f827361b57d97_299198642398453472.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.top-nav a.active,
+.top-nav a:hover {
+    border-color: #bf7bf1;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    padding-top: 60px; /* Adjust for fixed header */
+    height: calc(100vh - 60px);
+    overflow: hidden;
+}
+
+.left-sidebar {
+    width: 25%;
+    max-width: 300px;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.character-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    overflow-y: auto; 
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+.character-list::-webkit-scrollbar {
+    display: none;
+}
+
+.character-card {
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+}
+
+.character-card img {
+    width: 100%;
+    display: block;
+}
+
+.character-card .character-name-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.character-card.active {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #bf7bf1;
+    border-color: #bf7bf1;
+}
+
+.main-content {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 95%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+
+.scene.active {
+    opacity: 1;
+}
+
+.character-info {
+    flex-basis: 50%;
+    margin-right: 2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    min-width: 0; /* Fix for flexbox overflow */
+}
+
+.character-name {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.character-description {
+    overflow-wrap: break-word; /* Ensure long words do not overflow */
+}
+
+.character-image {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 70vh;
+    filter: drop-shadow(0 0 15px #bf7bf1);
+}
+
+.right-sidebar {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.side-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.side-nav a.active,
+.side-nav a:hover {
+    color: #bf7bf1;
+}
