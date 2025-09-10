@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background-container">
+        <!-- Background images will be injected here by JavaScript -->
+    </div>
+
     <header>
         <div class="logo">
-            <img src="https://webstatic.hoyoverse.com/upload/event/2022/09/25/e764126365b99395d97f827361b57d97_299198642398453472.png" alt="Genshin Impact Logo">
+            <img src="images/sideImages/hoyoverse_logo.png" alt="Hoyoverse Logo">
         </div>
         <nav class="top-nav">
             <a href="#">HOME</a>
@@ -26,17 +30,33 @@
     </header>
 
     <main>
-        <nav class="left-sidebar">
+        <aside class="social-sidebar">
+            <div class="social-icons">
+                <a href="#" aria-label="Telegram">
+                    <svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.74.88l-4.92-3.6-2.38 2.31c-.26.26-.49.49-.96.49z"/></svg>
+                </a>
+                <a href="#" aria-label="VK">
+                    <svg viewBox="0 0 24 24"><path d="M13.162 18.992h-1.325c-2.483 0-2.825-1.444-2.825-4.135v-3.723H7.04V8.42h1.972V5.033c0-1.25.468-2.585 2.586-2.585h2.824v2.71h-1.84c-.553 0-.687.247-.687.68v2.582h2.528l-.34 2.713h-2.188v3.98c0 2.484.46 3.86 2.485 3.86h1.59V18.99z"/></svg>
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </aside>
+
+        <aside class="character-sidebar">
             <div class="character-list">
                 <!-- Character cards will be injected here by JavaScript -->
             </div>
-        </nav>
+        </aside>
 
         <section class="main-content">
-            <!-- Character scenes will be injected here by JavaScript -->
+            <!-- Character info will be injected here by JavaScript -->
         </section>
 
-        <aside class="right-sidebar">
+        <aside class="region-sidebar">
             <nav class="side-nav">
                 <a href="#">MONSTADT</a>
                 <a href="#">LIYUE</a>
