@@ -1,4 +1,3 @@
-
 const characterListEl = document.querySelector('.character-list');
 const mainContent = document.querySelector('.main-content');
 const regionNav = document.querySelector('.side-nav');
@@ -12,15 +11,10 @@ let currentCharacters = [];
 
 // --- THEME ENGINE --- //
 
-/**
- * Calculates the average color of an image.
- * @param {string} imgUrl The URL of the image.
- * @returns {Promise<{r: number, g: number, b: number}>} A promise that resolves to the average RGB color.
- */
 function getAverageColorFromImage(imgUrl) {
     return new Promise((resolve, reject) => {
         const img = new Image();
-        img.crossOrigin = 'Anonymous'; // Important for cross-domain images
+        img.crossOrigin = 'Anonymous';
         img.src = imgUrl;
 
         img.onload = () => {
@@ -35,7 +29,7 @@ function getAverageColorFromImage(imgUrl) {
             let r = 0, g = 0, b = 0;
             let count = 0;
 
-            for (let i = 0; i < imageData.length; i += 4 * 10) { // Sample every 10th pixel for performance
+            for (let i = 0; i < imageData.length; i += 4 * 10) {
                 r += imageData[i];
                 g += imageData[i + 1];
                 b += imageData[i + 2];
@@ -56,15 +50,12 @@ function getAverageColorFromImage(imgUrl) {
     });
 }
 
-/**
- * Converts an RGB color value to HSL. 
- */
 function rgbToHsl(r, g, b) {
     r /= 255, g /= 255, b /= 255;
     let max = Math.max(r, g, b), min = Math.min(r, g, b);
     let h, s, l = (max + min) / 2;
     if (max == min) {
-        h = s = 0; // achromatic
+        h = s = 0;
     } else {
         let d = max - min;
         s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
@@ -78,35 +69,29 @@ function rgbToHsl(r, g, b) {
     return [h, s, l];
 }
 
-/**
- * Updates the CSS variables based on the dominant color of an image.
- * @param {string} imageUrl The URL of the image to analyze.
- */
 async function updateTheme(imageUrl) {
     try {
         const { r, g, b } = await getAverageColorFromImage(imageUrl);
         const [h, s, l] = rgbToHsl(r, g, b);
 
-        // Generate palette by manipulating HSL values
         const accentHue = h;
-        const accentSaturation = Math.min(s + 0.3, 1); // Boost saturation for a vibrant accent
-        const accentLightness = Math.max(l, 0.5); // Ensure accent is not too dark
+        const accentSaturation = Math.min(s + 0.3, 1);
+        const accentLightness = Math.max(l, 0.5);
 
-        // Convert HSL back to RGB string for CSS
         const accentColor = `hsl(${accentHue * 360}, ${accentSaturation * 100}%, ${accentLightness * 100}%)`;
         const brightAccentColor = `hsl(${accentHue * 360}, ${Math.min(s + 0.4, 1) * 100}%, ${Math.min(accentLightness + 0.1, 0.6) * 100}%)`;
-        const panelBgColor = `hsla(${accentHue * 360}, ${s * 100}%, 10%, 0.5)`; // Dark, desaturated version for panels
+        const panelBgColor = `hsla(${accentHue * 360}, ${s * 100}%, 10%, 0.5)`;
         const cardActiveBg = `hsla(${accentHue * 360}, ${s * 100}%, 50%, 0.2)`;
+        const cardGlowColor = `hsla(${accentHue * 360}, ${Math.min(s + 0.4, 1) * 100}%, ${Math.min(accentLightness + 0.1, 0.6) * 100}%, 0.6)`;
 
-        // Update CSS variables
         root.style.setProperty('--accent-color', accentColor);
         root.style.setProperty('--accent-gradient', `linear-gradient(to right, ${brightAccentColor}, transparent)`);
         root.style.setProperty('--panel-bg-color', panelBgColor);
         root.style.setProperty('--character-card-active-bg', cardActiveBg);
+        root.style.setProperty('--character-card-glow-color', cardGlowColor);
 
     } catch (error) {
         console.error("Failed to update theme:", error);
-        // Optionally revert to a default theme
     }
 }
 
@@ -119,7 +104,9 @@ async function fetchCharacters() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         allCharacters = await response.json();
-        const defaultRegion = document.querySelector('.side-nav a.active').textContent.trim();
+        const defaultRegionLink = regionNav.querySelector('a');
+        defaultRegionLink.classList.add('active');
+        const defaultRegion = defaultRegionLink.textContent.trim();
         initializeContent(defaultRegion);
     } catch (error) {
         console.error("Could not fetch characters:", error);
@@ -127,7 +114,7 @@ async function fetchCharacters() {
 }
 
 function initializeContent(region) {
-    currentCharacters = allCharacters.filter(char => char.region === region);
+    currentCharacters = allCharacters.filter(char => char.region.toUpperCase() === region.toUpperCase());
     
     let scenesHTML = '';
     let characterListHTML = '';
@@ -160,7 +147,6 @@ function initializeContent(region) {
     characterListEl.innerHTML = characterListHTML;
     activeCharacterIndex = 0;
 
-    // Initial theme update
     if (currentCharacters.length > 0) {
         updateTheme(currentCharacters[0].image);
     }
@@ -183,7 +169,6 @@ function setActiveCharacter(index) {
     activeCard.classList.add('active');
     activeCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
 
-    // Update theme based on the new character's image
     if (currentCharacters[index]) {
         updateTheme(currentCharacters[index].image);
     }

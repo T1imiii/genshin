@@ -1,13 +1,12 @@
 /* --- THEME VARIABLES --- */
-/* These will be updated by JavaScript */
 :root {
-    /* Default theme based on Inazuma */
     --primary-color: #a788e2;
     --accent-color: #bf7bf1;
     --accent-gradient: linear-gradient(to right, #d900ff, transparent);
     --panel-bg-color: rgba(10, 10, 20, 0.5);
     --border-color: rgba(255, 255, 255, 0.1);
     --character-card-active-bg: rgba(191, 123, 241, 0.2);
+    --character-card-glow-color: rgba(191, 123, 241, 0.6);
 }
 
 /* General Styling */
@@ -26,7 +25,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; /* Lowest z-index, so it's in the back */
+    z-index: 1;
 }
 
 .background-image {
@@ -50,8 +49,8 @@ header,
 .social-sidebar,
 .character-sidebar,
 .region-sidebar {
-    position: relative; /* Needed for the pseudo-element */
-    isolation: isolate; /* Create a new stacking context */
+    position: relative;
+    isolation: isolate;
 }
 
 header::before,
@@ -63,7 +62,7 @@ header::before,
     top: 0; left: 0; right: 0; bottom: 0;
     background-color: var(--panel-bg-color);
     backdrop-filter: blur(5px);
-    z-index: -1; /* Place behind the content, within the isolated context */
+    z-index: -1;
     transition: background-color 0.5s ease-in-out;
 }
 
@@ -77,8 +76,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100; 
-    height: 70px; 
+    z-index: 100;
+    height: 70px;
     box-sizing: border-box;
     border-bottom: 1px solid var(--border-color);
 }
@@ -105,14 +104,13 @@ header {
 /* Main Layout */
 main {
     display: flex;
-    position: relative; 
-    z-index: 50; 
-    padding-top: 70px; 
+    position: relative;
+    z-index: 50;
+    padding-top: 70px;
     height: 100vh;
     box-sizing: border-box;
 }
 
-/* Clear background from panels since it's handled by ::before */
 .social-sidebar,
 .character-sidebar,
 .region-sidebar {
@@ -138,22 +136,21 @@ main {
 }
 
 .social-icons a {
-    display: block; 
+    display: block;
     margin-bottom: 1.5rem;
 }
 
 .social-icons svg {
     width: 24px;
     height: 24px;
-    fill: #fff; 
+    fill: #fff;
     transition: fill 0.3s ease;
 }
 
 .social-icons a:hover svg {
-    fill: var(--accent-color); 
+    fill: var(--accent-color);
 }
 
-/* Scroll Indicator */
 .scroll-indicator .mouse {
     width: 25px;
     height: 40px;
@@ -180,7 +177,6 @@ main {
     100% { top: 8px; opacity: 1; }
 }
 
-
 .character-sidebar {
     width: 25%;
     max-width: 300px;
@@ -190,37 +186,39 @@ main {
 .character-list {
     height: 100%;
     width: 100%;
-    overflow-y: auto; 
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 .character-list::-webkit-scrollbar { display: none; }
 
+/* Character Card */
 .character-card {
     position: relative;
     cursor: pointer;
     border-bottom: 1px solid var(--border-color);
-    transition: background-color 0.3s;
+    opacity: 0.6;
+    filter: grayscale(40%);
+    transition: all 0.3s ease-in-out;
 }
 
 .character-card:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+    filter: none;
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .character-card.active {
+    opacity: 1;
+    filter: none;
     background-color: var(--character-card-active-bg);
     border-left: 4px solid var(--accent-color);
+    box-shadow: 0 0 15px 5px var(--character-card-glow-color);
 }
 
 .character-card img {
     width: 100%;
     display: block;
-    opacity: 0.8;
-    transition: opacity 0.3s;
-}
-
-.character-card:hover img, .character-card.active img {
-    opacity: 1;
 }
 
 .character-card .character-name-overlay {
@@ -242,7 +240,6 @@ main {
     align-items: center;
     height: 100%;
     box-sizing: border-box;
-    background-color: transparent; /* No blur on main content */
 }
 
 .scene {
@@ -281,6 +278,7 @@ main {
     display: flex;
     border-left: 1px solid var(--border-color);
     padding: 0;
+    height: calc(100vh - 70px);
 }
 
 .side-nav {
@@ -288,21 +286,29 @@ main {
     flex-direction: column;
     width: 100%;
     height: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.side-nav::-webkit-scrollbar { 
+    display: none; 
 }
 
 .side-nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    flex: 1; /* Distribute space equally */
+    min-height: 150px;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    transition: background-color 0.3s ease, color 0.3s ease, background 0.3s ease;
-    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Soft separator */
-    background-color: transparent; /* Ensure non-active items are clear */
+    transition: background-color 0.3s ease, color 0.3s ease, background 0.3s ease, border-color 0.5s ease-in-out;
+    border-top: 1px solid var(--border-color);
+    background-color: transparent;
 }
 
 .side-nav a:first-child {
