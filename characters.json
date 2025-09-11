@@ -3,24 +3,24 @@
     {
         "name": "RAIDEN SHOGUN",
         "description": "Her Excellency, the Almighty Narukami Ogosho, the exalted ruler of the Inazuma Shogunate. With the might of lightning at her disposal, she commits herself to the solitary pursuit of eternity.",
-        "image": "images/sideImages/mainImages/raiden_shogun_main.jpg",
-        "cardImage": "images/sideImages/raiden_shogun_side.jpg",
+        "image": "images/genshinImpact/mainImages/raiden_shogun_main.webp",
+        "cardImage": "images/genshinImpact/sideImages/raiden_shogun_side.jpg",
         "demoVideo": "\"Raiden Shogun: Judgment of Euthymia\"",
         "region": "INAZUMA"
     },
     {
         "name": "YAE MIKO",
         "description": "The head shrine maiden of the Grand Narukami Shrine, she is a descendant of the Kitsune lineage. She is intelligent and cunning, and not a person to be trifled with.",
-        "image": "images/sideImages/mainImages/yae_miko_main.jpg",
-        "cardImage": "images/sideImages/yae_miko_side.jpg",
+        "image": "images/genshinImpact/mainImages/yae_miko_main.webp",
+        "cardImage": "images/genshinImpact/sideImages/yae_miko_side.jpg",
         "demoVideo": "\"Yae Miko: Divine Ingenuity\"",
         "region": "INAZUMA"
     },
     {
         "name": "KAMISATO AYAKA",
         "description": "She is the eldest daughter of the Kamisato Clan and the sister of Kamisato Ayato. Beautiful, elegant, and graceful, the common folk of Inazuma have nothing but praise for her.",
-        "image": "images/sideImages/mainImages/kamisato_ayaka_main.jpg",
-        "cardImage": "images/sideImages/kamisato_ayaka_side.jpg",
+        "image": "images/genshinImpact/mainImages/kamisato_ayaka_main.jpg",
+        "cardImage": "images/genshinImpact/sideImages/kamisato_ayaka_side.jpg",
         "demoVideo": "\"Kamisato Ayaka: The Homeward Heron\"",
         "region": "INAZUMA"
     },
