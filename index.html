@@ -7,65 +7,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-container">
-        <!-- Background images will be injected here by JavaScript -->
-    </div>
-
     <header>
         <div class="logo">
-            <img src="images/sideImages/hoyoverse_logo.png" alt="Hoyoverse Logo">
+            <img src="images/genshinImpact/sideImages/hoyoverse_logo.png" alt="Hoyoverse Logo">
         </div>
         <nav class="top-nav">
-            <a href="#">HOME</a>
+            <a href="#" data-target="home" class="active">HOME</a>
+            <a href="#" data-target="characters">CHARACTERS</a>
             <a href="#">NEWS</a>
-            <a href="#" class="active">CHARACTERS</a>
             <a href="#">EXPLORE</a>
             <a href="#">WIKI</a>
         </nav>
-        <div class="hamburger-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
     </header>
 
     <main>
         <aside class="social-sidebar">
             <div class="social-icons">
-                <a href="#" aria-label="Telegram">
-                    <svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.74.88l-4.92-3.6-2.38 2.31c-.26.26-.49.49-.96.49z"/></svg>
-                </a>
-                <a href="#" aria-label="VK">
-                    <svg viewBox="0 0 24 24"><path d="M13.162 18.992h-1.325c-2.483 0-2.825-1.444-2.825-4.135v-3.723H7.04V8.42h1.972V5.033c0-1.25.468-2.585 2.586-2.585h2.824v2.71h-1.84c-.553 0-.687.247-.687.68v2.582h2.528l-.34 2.713h-2.188v3.98c0 2.484.46 3.86 2.485 3.86h1.59V18.99z"/></svg>
-                </a>
+                <a href="#" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.58c-.28 1.13-1.04 1.4-1.74.88l-4.92-3.6-2.38 2.31c-.26.26-.49.49-.96.49z"/></svg></a>
+                <a href="#" aria-label="VK"><svg viewBox="0 0 24 24"><path d="M13.162 18.992h-1.325c-2.483 0-2.825-1.444-2.825-4.135v-3.723H7.04V8.42h1.972V5.033c0-1.25.468-2.585 2.586-2.585h2.824v2.71h-1.84c-.553 0-.687.247-.687.68v2.582h2.528l-.34 2.713h-2.188v3.98c0 2.484.46 3.86 2.485 3.86h1.59V18.99z"/></svg></a>
             </div>
             <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
+                <div class="mouse"><div class="wheel"></div></div>
+            </div>
+        </aside>
+
+        <div class="page-container">
+            <!-- Page 1: HOME (Visible by default) -->
+            <section id="home-page" class="page active">
+                <div class="home-background"></div>
+                <div class="home-content">
+                    <h1>Исследуй мир Тейвата</h1>
+                    <p>Погрузитесь в захватывающую вселенную Genshin Impact. Откройте для себя разнообразных персонажей, каждый со своей уникальной историей и способностями. Наш сайт поможет вам познакомиться с героями этой невероятной игры.</p>
+                    <button id="start-browsing-btn">Начать просмотр</button>
                 </div>
-            </div>
-        </aside>
+            </section>
 
-        <aside class="character-sidebar">
-            <div class="character-list">
-                <!-- Character cards will be injected here by JavaScript -->
-            </div>
-        </aside>
-
-        <section class="main-content">
-            <!-- Character info will be injected here by JavaScript -->
-        </section>
-
-        <aside class="region-sidebar">
-            <nav class="side-nav">
-                <a href="#">MONSTADT</a>
-                <a href="#">LIYUE</a>
-                <a href="#">INAZUMA</a>
-                <a href="#">SUMERU</a>
-                <a href="#">FONTAINE</a>
-                <a href="#">NATLAN</a>
-            </nav>
-        </aside>
+            <!-- Page 2: CHARACTERS (Hidden by default) -->
+            <section id="characters-page" class="page">
+                <div class="background-container">
+                    <!-- Character-specific backgrounds will be injected here -->
+                </div>
+                <aside class="character-sidebar">
+                    <div class="character-list"></div>
+                </aside>
+                <section class="main-content"></section>
+                <aside class="region-sidebar">
+                    <nav class="side-nav">
+                        <a href="#">MONSTADT</a>
+                        <a href="#">LIYUE</a>
+                        <a href="#">INAZUMA</a>
+                        <a href="#">SUMERU</a>
+                        <a href="#">FONTAINE</a>
+                        <a href="#">NATLAN</a>
+                    </nav>
+                </aside>
+            </section>
+        </div>
     </main>
 
     <script src="main.js"></script>

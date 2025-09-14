@@ -1,211 +1,202 @@
-const characterListEl = document.querySelector('.character-list');
-const mainContent = document.querySelector('.main-content');
-const regionNav = document.querySelector('.side-nav');
-const backgroundContainer = document.querySelector('.background-container');
-const root = document.documentElement;
+document.addEventListener('DOMContentLoaded', () => {
 
-let activeCharacterIndex = 0;
-let isScrolling = false;
-let allCharacters = [];
-let currentCharacters = [];
+    // --- DOM ELEMENTS ---
+    const topNav = document.querySelector('.top-nav');
+    const startBrowsingBtn = document.getElementById('start-browsing-btn');
+    const pages = document.querySelectorAll('.page');
+    const scrollIndicator = document.querySelector('.scroll-indicator');
 
-// --- THEME ENGINE --- //
+    const characterListEl = document.querySelector('#characters-page .character-list');
+    const mainContent = document.querySelector('#characters-page .main-content');
+    const regionNav = document.querySelector('#characters-page .side-nav');
+    const backgroundContainer = document.querySelector('#characters-page .background-container');
+    const root = document.documentElement;
 
-function getAverageColorFromImage(imgUrl) {
-    return new Promise((resolve, reject) => {
-        const img = new Image();
-        img.crossOrigin = 'Anonymous';
-        img.src = imgUrl;
+    // --- STATE VARIABLES ---
+    let activeCharacterIndex = 0;
+    let isScrolling = false;
+    let allCharacters = [];
+    let currentCharacters = [];
+    let isCharactersInitialized = false;
 
-        img.onload = () => {
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            const width = canvas.width = img.width;
-            const height = canvas.height = img.height;
+    // --- CORE PAGE NAVIGATION ---
+    function switchPage(targetPageId) {
+        pages.forEach(page => page.classList.remove('active'));
+        const targetPage = document.getElementById(targetPageId);
+        if (targetPage) {
+            targetPage.classList.add('active');
+        }
 
-            ctx.drawImage(img, 0, 0);
-
-            const imageData = ctx.getImageData(0, 0, width, height).data;
-            let r = 0, g = 0, b = 0;
-            let count = 0;
-
-            for (let i = 0; i < imageData.length; i += 4 * 10) {
-                r += imageData[i];
-                g += imageData[i + 1];
-                b += imageData[i + 2];
-                count++;
+        document.querySelectorAll('.top-nav a').forEach(link => {
+            link.classList.remove('active');
+            if (link.dataset.target === targetPageId.replace('-page', '')) {
+                link.classList.add('active');
             }
+        });
+        
+        const isCharactersActive = targetPageId === 'characters-page';
+        scrollIndicator.style.display = isCharactersActive ? 'block' : 'none';
 
-            r = ~~(r / count);
-            g = ~~(g / count);
-            b = ~~(b / count);
+        if (isCharactersActive && !isCharactersInitialized) {
+            initializeCharactersPage();
+        }
+    }
 
-            resolve({ r, g, b });
-        };
+    // --- THEME ENGINE (for Characters page) --- //
 
-        img.onerror = (err) => {
-            console.error("Error loading image for color analysis:", err);
-            reject(err);
-        };
+    function getAverageColorFromImage(imgUrl) {
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.crossOrigin = 'Anonymous';
+            img.src = imgUrl;
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = img.width; canvas.height = img.height;
+                ctx.drawImage(img, 0, 0);
+                const data = ctx.getImageData(0, 0, img.width, img.height).data;
+                let r = 0, g = 0, b = 0, count = 0;
+                for (let i = 0; i < data.length; i += 20) { // Sample pixels
+                    r += data[i]; g += data[i+1]; b += data[i+2];
+                    count++;
+                }
+                resolve({ r: ~~(r/count), g: ~~(g/count), b: ~~(b/count) });
+            };
+            img.onerror = reject;
+        });
+    }
+
+    function rgbToHsl(r, g, b) {
+        r /= 255, g /= 255, b /= 255;
+        let max = Math.max(r, g, b), min = Math.min(r, g, b);
+        let h, s, l = (max + min) / 2;
+        if (max == min) { h = s = 0; } else {
+            let d = max - min;
+            s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+            switch(max){ case r: h = (g - b) / d + (g < b ? 6 : 0); break; case g: h = (b - r) / d + 2; break; case b: h = (r - g) / d + 4; break; }
+            h /= 6;
+        }
+        return [h, s, l];
+    }
+
+    async function updateTheme(imageUrl) {
+        try {
+            const { r, g, b } = await getAverageColorFromImage(imageUrl);
+            const [h, s, l] = rgbToHsl(r, g, b);
+
+            const accentColor = `hsl(${h * 360}, ${Math.min(s + 0.3, 1) * 100}%, ${Math.max(l, 0.5) * 100}%)`;
+            const brightAccent = `hsl(${h * 360}, ${Math.min(s + 0.4, 1) * 100}%, ${Math.min(l + 0.1, 0.6) * 100}%)`;
+            
+            const activeCardBg = `hsla(${h * 360}, ${Math.min(s + 0.3, 1) * 100}%, ${Math.max(l, 0.5) * 100}%, 0.2)`;
+            const glowColor = `hsla(${h * 360}, ${Math.min(s + 0.3, 1) * 100}%, ${Math.max(l, 0.5) * 100}%, 0.6)`;
+            const dynamicBorderColor = `hsla(${h * 360}, ${Math.min(s + 0.2, 1) * 100}%, ${Math.max(l, 0.4) * 100}%, 0.5)`;
+
+            root.style.setProperty('--accent-color', accentColor);
+            root.style.setProperty('--accent-gradient', `linear-gradient(to right, ${brightAccent}, transparent)`);
+            root.style.setProperty('--character-card-active-bg', activeCardBg);
+            root.style.setProperty('--character-card-glow-color', glowColor);
+            root.style.setProperty('--dynamic-border-color', dynamicBorderColor);
+
+        } catch (error) {
+            console.error("Failed to update theme:", error);
+            // Fallback to default static colors if image processing fails
+            root.style.setProperty('--accent-color', '#bf7bf1');
+            root.style.setProperty('--accent-gradient', 'linear-gradient(to right, #d900ff, transparent)');
+            root.style.setProperty('--character-card-active-bg', 'rgba(191, 123, 241, 0.2)');
+            root.style.setProperty('--character-card-glow-color', 'rgba(191, 123, 241, 0.6)');
+            root.style.setProperty('--dynamic-border-color', 'rgba(255, 255, 255, 0.1)');
+        }
+    }
+
+    // --- CHARACTERS PAGE LOGIC --- //
+
+    async function initializeCharactersPage() {
+        try {
+            const response = await fetch('./characters.json');
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            allCharacters = await response.json();
+            const defaultRegionLink = regionNav.querySelector('a');
+            if (defaultRegionLink) {
+                defaultRegionLink.classList.add('active');
+                renderCharacterContent(defaultRegionLink.textContent.trim());
+            }
+            isCharactersInitialized = true;
+        } catch (error) {
+            console.error("Could not initialize characters page:", error);
+        }
+    }
+
+    function renderCharacterContent(region) {
+        currentCharacters = allCharacters.filter(char => char.region.toUpperCase() === region.toUpperCase());
+        let scenesHTML = '', listHTML = '', bgHTML = '';
+
+        currentCharacters.forEach((char, index) => {
+            const isActive = index === 0;
+            bgHTML += `<div class="background-image ${isActive ? 'active' : ''}" style="background-image: url('${char.image}');" data-index="${index}"></div>`;
+            scenesHTML += `<div class="scene ${isActive ? 'active' : ''}" data-index="${index}"><div class="character-info"><h1 class="character-name">${char.name}</h1><p class="character-description">${char.description}</p></div></div>`;
+            listHTML += `<div class="character-card ${isActive ? 'active' : ''}" data-index="${index}"><img src="${char.cardImage}" alt="${char.name}"><div class="character-name-overlay">${char.name}</div></div>`;
+        });
+
+        backgroundContainer.innerHTML = bgHTML;
+        mainContent.innerHTML = scenesHTML;
+        characterListEl.innerHTML = listHTML;
+        activeCharacterIndex = 0;
+
+        if (currentCharacters.length > 0) {
+            updateTheme(currentCharacters[0].image);
+        }
+    }
+
+    function setActiveCharacter(index) {
+        if (isScrolling || index < 0 || index >= currentCharacters.length || index === activeCharacterIndex) return;
+        isScrolling = true;
+        activeCharacterIndex = index;
+
+        document.querySelectorAll('#characters-page .background-image, #characters-page .scene, #characters-page .character-card').forEach(el => el.classList.remove('active'));
+        document.querySelector(`#characters-page .background-image[data-index="${index}"]`).classList.add('active');
+        document.querySelector(`#characters-page .scene[data-index="${index}"]`).classList.add('active');
+        const activeCard = document.querySelector(`#characters-page .character-card[data-index="${index}"]`);
+        activeCard.classList.add('active');
+        activeCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        if (currentCharacters[index]) {
+            updateTheme(currentCharacters[index].image);
+        }
+        setTimeout(() => { isScrolling = false; }, 800);
+    }
+
+    // --- EVENT LISTENERS ---
+
+    topNav.addEventListener('click', (e) => {
+        const link = e.target.closest('a');
+        if (link && link.dataset.target) {
+            e.preventDefault();
+            switchPage(link.dataset.target + '-page');
+        }
     });
-}
 
-function rgbToHsl(r, g, b) {
-    r /= 255, g /= 255, b /= 255;
-    let max = Math.max(r, g, b), min = Math.min(r, g, b);
-    let h, s, l = (max + min) / 2;
-    if (max == min) {
-        h = s = 0;
-    } else {
-        let d = max - min;
-        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-        switch (max) {
-            case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-            case g: h = (b - r) / d + 2; break;
-            case b: h = (r - g) / d + 4; break;
+    startBrowsingBtn.addEventListener('click', () => switchPage('characters-page'));
+
+    window.addEventListener('wheel', (e) => {
+        if (!document.getElementById('characters-page').classList.contains('active') || isScrolling) return;
+        setActiveCharacter(activeCharacterIndex + (e.deltaY > 0 ? 1 : -1));
+    });
+
+    characterListEl.addEventListener('click', (e) => {
+        const card = e.target.closest('.character-card');
+        if (card) setActiveCharacter(parseInt(card.dataset.index));
+    });
+
+    regionNav.addEventListener('click', (e) => {
+        const link = e.target.closest('a');
+        if (link) {
+            e.preventDefault();
+            document.querySelectorAll('#characters-page .side-nav a').forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+            renderCharacterContent(link.textContent.trim());
         }
-        h /= 6;
-    }
-    return [h, s, l];
-}
-
-async function updateTheme(imageUrl) {
-    try {
-        const { r, g, b } = await getAverageColorFromImage(imageUrl);
-        const [h, s, l] = rgbToHsl(r, g, b);
-
-        const accentHue = h;
-        const accentSaturation = Math.min(s + 0.3, 1);
-        const accentLightness = Math.max(l, 0.5);
-
-        const accentColor = `hsl(${accentHue * 360}, ${accentSaturation * 100}%, ${accentLightness * 100}%)`;
-        const brightAccentColor = `hsl(${accentHue * 360}, ${Math.min(s + 0.4, 1) * 100}%, ${Math.min(accentLightness + 0.1, 0.6) * 100}%)`;
-        const panelBgColor = `hsla(${accentHue * 360}, ${s * 100}%, 10%, 0.5)`;
-        const cardActiveBg = `hsla(${accentHue * 360}, ${s * 100}%, 50%, 0.2)`;
-        const cardGlowColor = `hsla(${accentHue * 360}, ${Math.min(s + 0.4, 1) * 100}%, ${Math.min(accentLightness + 0.1, 0.6) * 100}%, 0.6)`;
-
-        root.style.setProperty('--accent-color', accentColor);
-        root.style.setProperty('--accent-gradient', `linear-gradient(to right, ${brightAccentColor}, transparent)`);
-        root.style.setProperty('--panel-bg-color', panelBgColor);
-        root.style.setProperty('--character-card-active-bg', cardActiveBg);
-        root.style.setProperty('--character-card-glow-color', cardGlowColor);
-
-    } catch (error) {
-        console.error("Failed to update theme:", error);
-    }
-}
-
-// --- APPLICATION LOGIC --- //
-
-async function fetchCharacters() {
-    try {
-        const response = await fetch('characters.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        allCharacters = await response.json();
-        const defaultRegionLink = regionNav.querySelector('a');
-        defaultRegionLink.classList.add('active');
-        const defaultRegion = defaultRegionLink.textContent.trim();
-        initializeContent(defaultRegion);
-    } catch (error) {
-        console.error("Could not fetch characters:", error);
-    }
-}
-
-function initializeContent(region) {
-    currentCharacters = allCharacters.filter(char => char.region.toUpperCase() === region.toUpperCase());
+    });
     
-    let scenesHTML = '';
-    let characterListHTML = '';
-    let backgroundHTML = '';
-
-    currentCharacters.forEach((character, index) => {
-        backgroundHTML += `
-            <div class="background-image ${index === 0 ? 'active' : ''}" 
-                 style="background-image: url('${character.image}');" 
-                 data-index="${index}">
-            </div>`;
-        scenesHTML += `
-            <div class="scene ${index === 0 ? 'active' : ''}" data-index="${index}">
-                <div class="character-info">
-                    <h1 class="character-name">${character.name}</h1>
-                    <p class="character-description">${character.description}</p>
-                </div>
-            </div>
-        `;
-        characterListHTML += `
-            <div class="character-card ${index === 0 ? 'active' : ''}" data-index="${index}">
-                <img src="${character.cardImage}" alt="${character.name}">
-                <div class="character-name-overlay">${character.name}</div>
-            </div>
-        `;
-    });
-
-    backgroundContainer.innerHTML = backgroundHTML;
-    mainContent.innerHTML = scenesHTML;
-    characterListEl.innerHTML = characterListHTML;
-    activeCharacterIndex = 0;
-
-    if (currentCharacters.length > 0) {
-        updateTheme(currentCharacters[0].image);
-    }
-}
-
-function setActiveCharacter(index) {
-    if (isScrolling || index < 0 || index >= currentCharacters.length || index === activeCharacterIndex) return;
-
-    isScrolling = true;
-    activeCharacterIndex = index;
-
-    document.querySelectorAll('.background-image').forEach(bg => bg.classList.remove('active'));
-    document.querySelector(`.background-image[data-index="${index}"]`).classList.add('active');
-
-    document.querySelectorAll('.scene').forEach(scene => scene.classList.remove('active'));
-    document.querySelector(`.scene[data-index="${index}"]`).classList.add('active');
-
-    document.querySelectorAll('.character-card').forEach(card => card.classList.remove('active'));
-    const activeCard = document.querySelector(`.character-card[data-index="${index}"]`);
-    activeCard.classList.add('active');
-    activeCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
-    if (currentCharacters[index]) {
-        updateTheme(currentCharacters[index].image);
-    }
-
-    setTimeout(() => {
-        isScrolling = false;
-    }, 800);
-}
-
-// --- EVENT LISTENERS ---
-
-window.addEventListener('wheel', (event) => {
-    if (isScrolling) return;
-    const direction = event.deltaY > 0 ? 1 : -1;
-    setActiveCharacter(activeCharacterIndex + direction);
+    // Initial setup
+    switchPage('home-page');
 });
-
-characterListEl.addEventListener('click', (event) => {
-    const card = event.target.closest('.character-card');
-    if (card && card.dataset.index) {
-        const index = parseInt(card.dataset.index, 10);
-        setActiveCharacter(index);
-    }
-});
-
-regionNav.addEventListener('click', (event) => {
-    const regionLink = event.target.closest('a');
-    if (regionLink) {
-        event.preventDefault();
-        const selectedRegion = regionLink.textContent.trim();
-        
-        document.querySelectorAll('.side-nav a').forEach(link => link.classList.remove('active'));
-        regionLink.classList.add('active');
-        
-        initializeContent(selectedRegion);
-    }
-});
-
-// Initial Fetch
-fetchCharacters();
