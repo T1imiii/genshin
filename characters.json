@@ -27,7 +27,7 @@
     {
         "name": "Zhongli",
         "description": "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.",
-        "image": "https://genshin.honeyhunterworld.com/img/zhongli_030_gacha_splash.webp",
+        "image": "images/genshinImpact/mainImages/chjun_li_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/0a/33/c8/0a33c8c7f39558778d8434a87a8e7e4e.jpg",
         "demoVideo": "\"Zhongli: The Listener\"",
         "region": "LIYUE"
@@ -35,15 +35,79 @@
     {
         "name": "Ganyu",
         "description": "The secretary to the Liyue Qixing. The blood of both human and illuminated beast flows within her veins.",
-        "image": "https://genshin.honeyhunterworld.com/img/ganyu_037_gacha_splash.webp",
+        "image": "images/genshinImpact/mainImages/ganuy_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/b8/5b/c8/b85bc8f5f6e80b439c2c62f275e7adef.jpg",
         "demoVideo": "\"Ganyu: A Night in Liyue\"",
         "region": "LIYUE"
     },
     {
+        "name": "Xianyun",
+        "description": "One of the Mighty and Illuminated Adepti of Jueyun, known as Cloud Retainer. Now, she has entered the mortal realm and is known as Xianyun.",
+        "image": "images/genshinImpact/mainImages/syan_yan_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/c7/b0/31/c7b031b34e42a9a7a6b8352c3558b29c.jpg",
+        "demoVideo": "\"Xianyun: A New Stage\"",
+        "region": "LIYUE"
+    },
+    {
+        "name": "Baizhu",
+        "description": "The owner of Bubu Pharmacy in Liyue Harbor. He is rarely seen without his talking white snake, Changsheng.",
+        "image": "images/genshinImpact/mainImages/bai_chju_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/4b/3c/6f/4b3c6f4b6b3b6b3b6b3b6b3b6b3b6b3b.jpg",
+        "demoVideo": "\"Baizhu: The Universal Purveyor\"",
+        "region": "LIYUE"
+    },
+    {
+        "name": "Xiao",
+        "description": "A yaksha adeptus who defends Liyue. Also heralded as the \"Conqueror of Demons\" and \"Vigilant Yaksha\".",
+        "image": "images/genshinImpact/mainImages/syao_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/2c/6b/3a/2c6b3a3c8e5b0b2e3e9d0d3d5f9b8b1a.jpg",
+        "demoVideo": "\"Xiao: A-whirl in the Night\"",
+        "region": "LIYUE"
+    },
+    {
+        "name": "Yelan",
+        "description": "A mysterious person who claims to work for the Ministry of Civil Affairs. She is the owner of the Yanshang Teahouse.",
+        "image": "images/genshinImpact/mainImages/elan_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/5f/1a/7d/5f1a7d2b7d2b7d2b7d2b7d2b7d2b7d2b.jpg",
+        "demoVideo": "\"Yelan: Shadow in the Rain\"",
+        "region": "LIYUE"
+    },
+    {
+        "name": "Hu Tao",
+        "description": "The 77th Director of the Wangsheng Funeral Parlor, a person vital to managing Liyue's funerary affairs.",
+        "image": "images/genshinImpact/mainImages/hu_tao_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/8d/8d/8d/8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d.jpg",
+        "demoVideo": "\"Hu Tao: Let the Living Beware\"",
+        "region": "LIYUE"
+    },
+    {
+        "name": "Shenhe",
+        "description": "An adepti disciple with a mysterious past. She was raised by Cloud Retainer.",
+        "image": "images/genshinImpact/mainImages/shen_he_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/6a/6a/6a/6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a.jpg",
+        "demoVideo": "\"Shenhe: A Lonesome Transcendence\"",
+        "region": "LIYUE"
+    },
+    {
+        "name": "Keqing",
+        "description": "The Yuheng of the Liyue Qixing. She is a skeptic of the gods and believes that humanity should determine its own future.",
+        "image": "images/genshinImpact/mainImages/ke_cin_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/1b/1b/1b/1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b.jpg",
+        "demoVideo": "\"Keqing: Starward Sword\"",
+        "region": "LIYUE"
+    },
+    {
+        "name": "Qiqi",
+        "description": "A zombie resurrected by the adepti. She works at the Bubu Pharmacy and has a poor memory.",
+        "image": "images/genshinImpact/mainImages/ci_ci_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/7d/7d/7d/7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d.jpg",
+        "demoVideo": "\"Qiqi: An Icy Resolution\"",
+        "region": "LIYUE"
+    },
+    {
         "name": "Jean",
         "description": "The Acting Grand Master of the Knights of Favonius. She is always busy with her duties and maintains the peace in Mondstadt.",
-        "image": "https://genshin.honeyhunterworld.com/img/jean_003_gacha_splash.webp",
+        "image": "images/genshinImpact/mainImages/jean_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/57/3e/27/573e279eb80685b882410a35b1381c8b.jpg",
         "demoVideo": "\"Jean: The Dandelion Knight\"",
         "region": "MONSTADT"
@@ -51,9 +115,49 @@
     {
         "name": "Diluc",
         "description": "The tycoon of a winery empire in Mondstadt, unparalleled in every possible way.",
-        "image": "https://genshin.honeyhunterworld.com/img/diluc_016_gacha_splash.webp",
+        "image": "images/genshinImpact/mainImages/diluc_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/44/89/36/4489363a23a3d5a2d65518b2b713337a.jpg",
         "demoVideo": "\"Diluc: The Dark Side of Dawn\"",
+        "region": "MONSTADT"
+    },
+    {
+        "name": "Albedo",
+        "description": "A synthetic human made by the alchemist Rhinedottir, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.",
+        "image": "images/genshinImpact/mainImages/albedo_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/b8/b4/a6/b8b4a6b0d5e1e5a45e9a2b38f8b8f8b8.jpg",
+        "demoVideo": "\"Albedo: Contemplation in Chalk\"",
+        "region": "MONSTADT"
+    },
+    {
+        "name": "Eula",
+        "description": "The Spindrift Knight, a scion of the old aristocracy, and the Captain of the Knights of Favonius Reconnaissance Company. The reason for her joining the Knights remains a mystery.",
+        "image": "images/genshinImpact/mainImages/eula_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/0e/60/76/0e6076192e2133c52f20c242e2b4f8e5.jpg",
+        "demoVideo": "\"Eula: Flickering Candlelight\"",
+        "region": "MONSTADT"
+    },
+    {
+        "name": "Klee",
+        "description": "An energetic and outgoing girl, Klee is the daughter of the intrepid and often-destructive adventurer Alice. She is a member of the Knights of Favonius, and has a penchant for bombs and explosives.",
+        "image": "images/genshinImpact/mainImages/klee_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/1a/1a/1a/1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a.jpg",
+        "demoVideo": "\"Klee: Jumpy Dumpty\"",
+        "region": "MONSTADT"
+    },
+    {
+        "name": "Mona",
+        "description": "A mysterious young astrologer who has taken up residence in Mondstadt to avoid her master. She is knowledgeable and prideful, but also struggles with her finances.",
+        "image": "images/genshinImpact/mainImages/mona_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/3d/3d/3d/3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d.jpg",
+        "demoVideo": "\"Mona: Stellaris Phantasm\"",
+        "region": "MONSTADT"
+    },
+    {
+        "name": "Venti",
+        "description": "A bard that came to Mondstadt from an unknown place. He sometimes sings outdated songs, and other times he sings new songs that have never been heard of before.",
+        "image": "images/genshinImpact/mainImages/venti_main.jpg",
+        "cardImage": "https://i.pinimg.com/564x/9d/9d/9d/9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d.jpg",
+        "demoVideo": "\"Venti: The Skyward Sonnet\"",
         "region": "MONSTADT"
     },
     {
@@ -83,7 +187,7 @@
     {
         "name": "Neuvillette",
         "description": "The Iudex of Fontaine and the leader of the Marechaussee Phantom. He is a calm, impartial, and powerful figure who judges both humans and gods.",
-        "image": "https://genshin.honeyhunterworld.com/img/neuvillette_088_gacha_splash.webp",
+        "image": "https.genshin.honeyhunterworld.com/img/neuvillette_088_gacha_splash.webp",
         "cardImage": "https://i.pinimg.com/564x/9e/d4/7b/9ed47b2e9d80d2208d1a12e2c071d7c3.jpg",
         "demoVideo": "\"Neuvillette: To the Risers of the Tide\"",
         "region": "FONTAINE"
