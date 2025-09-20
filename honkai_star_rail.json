@@ -1,0 +1,99 @@
+
+[
+    {
+        "name": "March 7th",
+        "description": "A spirited and quirky girl who was found sealed in a block of ice. She has no memory of her past, but she is optimistic and eager to discover her identity.",
+        "image": "images/honkaiStarRail/mainImages/march7th_main.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/march7th_side.jpg",
+        "demoVideo": "",
+        "region": "Astral Express"
+    },
+    {
+        "name": "Dan Heng",
+        "description": "A reserved and mysterious young man who wields a spear. He is the archivist of the Astral Express, and he is always calm and collected.",
+        "image": "images/honkaiStarRail/mainImages/danheng_main.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/danheng_side.jpg",
+        "demoVideo": "",
+        "region": "Astral Express"
+    },
+    {
+        "name": "Herta",
+        "description": "The master of the Herta Space Station, who appears as a puppet. She is a genius researcher with a sharp tongue and a passion for collecting rare and unusual things.",
+        "image": "images/honkaiStarRail/mainImages/herta_main.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/herta_side.jpg",
+        "demoVideo": "",
+        "region": "Herta Space Station"
+    },
+    {
+        "name": "Asta",
+        "description": "The lead researcher of the Herta Space Station, Asta is an energetic and curious girl from a wealthy family. She manages the station's affairs with boundless enthusiasm.",
+        "image": "images/honkaiStarRail/mainImages/asta_main.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/asta_side.jpg",
+        "demoVideo": "",
+        "region": "Herta Space Station"
+    },
+    {
+        "name": "Bronya",
+        "description": "The Supreme Guardian of Belobog, the last remaining city on the frozen planet of Jarilo-VI. She is a capable and determined leader who strives to protect her people.",
+        "image": "images/honkaiStarRail/mainImages/bronya_main.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/bronya_side.jpg",
+        "demoVideo": "",
+        "region": "Jarilo-VI"
+    },
+    {
+        "name": "Seele",
+        "description": "A spirited and valiant member of Wildfire, the resistance organization in Belobog's Underworld. She is accustomed to being alone and wields a giant scythe with proficiency.",
+        "image": "images/honkaiStarRail/mainImages/seele_main.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/seele_side.jpg",
+        "demoVideo": "",
+        "region": "Jarilo-VI"
+    },
+    {
+        "name": "Jing Yuan",
+        "description": "One of the seven Arbiter-Generals of the Xianzhou Alliance's Cloud Knights. A master tactician, he leads the Xianzhou Luofu with meticulous foresight.",
+        "image": "images/honkaiStarRail/mainImages/jing_yuan_main.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/jing_yuan_side.jpg",
+        "demoVideo": "",
+        "region": "The Xianzhou Luofu"
+    },
+    {
+        "name": "Blade",
+        "description": "A member of the Stellaron Hunters, whose past is a mystery. He wields an ancient sword that is filled with cracks, just like his body and his mind.",
+        "image": "images/honkaiStarRail/mainImages/blade_main.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/blade_side.jpg",
+        "demoVideo": "",
+        "region": "The Xianzhou Luofu"
+    },
+    {
+        "name": "Acheron",
+        "description": "A Galaxy Ranger who walks the cosmos alone. Her true name is unknown, and she strikes with a long sword, swift and silent as a flash of crimson.",
+        "image": "images/honkaiStarRail/mainImages/acheron_main.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/acheron_side.jpg",
+        "demoVideo": "",
+        "region": "Penacony"
+    },
+    {
+        "name": "Black Swan",
+        "description": "A Memokeeper of the Garden of Recollection. A mysterious and elegant soothsayer, she has a keen interest in the memories of others.",
+        "image": "images/honkaiStarRail/mainImages/black_swan_main.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/black_swan_side.jpg",
+        "demoVideo": "",
+        "region": "Penacony"
+    },
+    {
+        "name": "Pathfinder",
+        "description": "A mysterious explorer from Amphoreus, a world yet uncharted. They are known for their resilience and knowledge of forgotten stellar pathways.",
+        "image": "images/honkaiStarRail/mainImages/placeholder_main_1.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/placeholder_side_1.jpg",
+        "demoVideo": "",
+        "region": "Amphoreus"
+    },
+    {
+        "name": "Stellarguide",
+        "description": "A native of Amphoreus, possessing a unique connection to the stars. They guide lost travelers through the treacherous, shifting landscapes of their homeworld.",
+        "image": "images/honkaiStarRail/mainImages/placeholder_main_2.jpg",
+        "cardImage": "images/honkaiStarRail/sideImages/placeholder_side_2.jpg",
+        "demoVideo": "",
+        "region": "Amphoreus"
+    }
+]

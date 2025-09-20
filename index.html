@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genshin Impact</title>
+    <title>Hoyoverse</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +13,14 @@
         </div>
         <nav class="top-nav">
             <a href="#" data-target="home" class="active">HOME</a>
-            <a href="#" data-target="characters">CHARACTERS</a>
+            <div class="nav-item has-dropdown">
+                <a href="#" class="characters-link">CHARACTERS</a>
+                <div class="dropdown-menu">
+                    <a href="#" data-target="characters" data-game="characters">Genshin Impact</a>
+                    <a href="#" data-target="characters" data-game="honkai_star_rail">Honkai Star Rail</a>
+                    <a href="#" data-target="characters" data-game="zenless_zone_zero">Zenless Zone Zero</a>
+                </div>
+            </div>
             <a href="#">NEWS</a>
             <a href="#">EXPLORE</a>
             <a href="#">WIKI</a>
@@ -36,8 +43,8 @@
             <section id="home-page" class="page active">
                 <div class="home-background"></div>
                 <div class="home-content">
-                    <h1>Исследуй мир Тейвата</h1>
-                    <p>Погрузитесь в захватывающую вселенную Genshin Impact. Откройте для себя разнообразных персонажей, каждый со своей уникальной историей и способностями. Наш сайт поможет вам познакомиться с героями этой невероятной игры.</p>
+                    <h1>Исследуй миры Hoyoverse</h1>
+                    <p>Погрузитесь в захватывающие вселенные от Hoyoverse. Откройте для себя разнообразных персонажей, каждый со своей уникальной историей и способностями. Наш сайт поможет вам познакомиться с героями этих невероятных игр.</p>
                     <button id="start-browsing-btn">Начать просмотр</button>
                 </div>
             </section>
@@ -53,17 +60,21 @@
                 <section class="main-content"></section>
                 <aside class="region-sidebar">
                     <nav class="side-nav">
-                        <a href="#">MONSTADT</a>
-                        <a href="#">LIYUE</a>
-                        <a href="#">INAZUMA</a>
-                        <a href="#">SUMERU</a>
-                        <a href="#">FONTAINE</a>
-                        <a href="#">NATLAN</a>
+                        <!-- Region links are dynamically populated by JS -->
                     </nav>
                 </aside>
             </section>
         </div>
     </main>
+    
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+        <div class="video-modal-overlay"></div>
+        <div class="video-modal-content">
+            <button class="close-video-btn">&times;</button>
+            <video src="" controls></video>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>

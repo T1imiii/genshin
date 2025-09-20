@@ -5,7 +5,7 @@
         "description": "Her Excellency, the Almighty Narukami Ogosho, the exalted ruler of the Inazuma Shogunate. With the might of lightning at her disposal, she commits herself to the solitary pursuit of eternity.",
         "image": "images/genshinImpact/mainImages/raiden_shogun_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/raiden_shogun_side.jpg",
-        "demoVideo": "\"Raiden Shogun: Judgment of Euthymia\"",
+        "demoVideo": "",
         "region": "INAZUMA"
     },
     {
@@ -13,7 +13,7 @@
         "description": "The head shrine maiden of the Grand Narukami Shrine, she is a descendant of the Kitsune lineage. She is intelligent and cunning, and not a person to be trifled with.",
         "image": "images/genshinImpact/mainImages/yae_miko_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/yae_miko_side.jpg",
-        "demoVideo": "\"Yae Miko: Divine Ingenuity\"",
+        "demoVideo": "",
         "region": "INAZUMA"
     },
     {
@@ -21,7 +21,7 @@
         "description": "She is the eldest daughter of the Kamisato Clan and the sister of Kamisato Ayato. Beautiful, elegant, and graceful, the common folk of Inazuma have nothing but praise for her.",
         "image": "images/genshinImpact/mainImages/kamisato_ayaka_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/kamisato_ayaka_side.jpg",
-        "demoVideo": "\"Kamisato Ayaka: The Homeward Heron\"",
+        "demoVideo": "",
         "region": "INAZUMA"
     },
     {
@@ -29,7 +29,7 @@
         "description": "The owner of Chioriya Boutique in Fontaine. A renowned fashion designer from Inazuma who is known for her bold and innovative designs.",
         "image": "images/genshinImpact/mainImages/tiori_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/tiori_side.jpg",
-        "demoVideo": "\"Chiori: The Thundering Seamstress\"",
+        "demoVideo": "",
         "region": "INAZUMA"
     },
     {
@@ -37,7 +37,7 @@
         "description": "The first and greatest head of the Arataki Gang, a fast and fiery personality who is known for his Oni heritage and competitive spirit.",
         "image": "images/genshinImpact/mainImages/itto_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/itto_side.jpg",
-        "demoVideo": "\"Arataki Itto: Make Way for the One and Oni!\"",
+        "demoVideo": "",
         "region": "INAZUMA"
     },
     {
@@ -45,7 +45,7 @@
         "description": "The current head of the Kamisato Clan and the Yashiro Commissioner. He is a man of many mysteries and is known for his cunning and political prowess.",
         "image": "images/genshinImpact/mainImages/kamisato_ayato_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/kamisato_ayato_side.jpg",
-        "demoVideo": "\"Kamisato Ayato: A Quiet Consideration\"",
+        "demoVideo": "",
         "region": "INAZUMA"
     },
     {
@@ -53,7 +53,7 @@
         "description": "The Divine Priestess of Watatsumi Island and a brilliant military strategist. She is a gentle and wise leader who cares deeply for her people.",
         "image": "images/genshinImpact/mainImages/sanganomiya_kokomi_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/kokomi_side.jpg",
-        "demoVideo": "\"Sangonomiya Kokomi: A Thousand Waves Under the Moon\"",
+        "demoVideo": "",
         "region": "INAZUMA"
     },
     {
@@ -61,7 +61,7 @@
         "description": "A wandering samurai from Inazuma who is currently with Liyue's Crux Fleet. A gentle and carefree soul, Kazuha has a unique ability to read the sounds of nature.",
         "image": "images/genshinImpact/mainImages/kaedehara_kadzuha_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/kadzuha_side.png",
-        "demoVideo": "\"Kaedehara Kazuha: Wandering Winds\"",
+        "demoVideo": "",
         "region": "INAZUMA"
     },
     {
@@ -69,7 +69,7 @@
         "description": "The owner of Naganohara Fireworks. Known as the \"Queen of the Summer Festival,\" she is a talented pyrotechnician who brings joy to the people of Inazuma.",
         "image": "images/genshinImpact/mainImages/eemiya_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/eemiya_side.png",
-        "demoVideo": "\"Yoimiya: The Queen of Summer\"",
+        "demoVideo": "",
         "region": "INAZUMA"
     },
     {
@@ -77,7 +77,7 @@
         "description": "A chef from Inazuma and a member of the \"Gourmet Supremos\". He is passionate about finding exotic ingredients and creating new dishes.",
         "image": "images/genshinImpact/mainImages/midzuki_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/midzuki_side.png",
-        "demoVideo": "\"Mizuki: A Culinary Journey\"",
+        "demoVideo": "",
         "region": "INAZUMA"
     },
     {
@@ -85,7 +85,7 @@
         "description": "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things.",
         "image": "images/genshinImpact/mainImages/chjun_li_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/chun_li_side.jpg",
-        "demoVideo": "\"Zhongli: The Listener\"",
+        "demoVideo": "",
         "region": "LIYUE"
     },
     {
@@ -93,7 +93,7 @@
         "description": "The secretary to the Liyue Qixing. The blood of both human and illuminated beast flows within her veins.",
         "image": "images/genshinImpact/mainImages/ganuy_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/ganui_side.jpg",
-        "demoVideo": "\"Ganyu: A Night in Liyue\"",
+        "demoVideo": "",
         "region": "LIYUE"
     },
     {
@@ -101,7 +101,7 @@
         "description": "One of the Mighty and Illuminated Adepti of Jueyun, known as Cloud Retainer. Now, she has entered the mortal realm and is known as Xianyun.",
         "image": "images/genshinImpact/mainImages/syan_yan_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/syan_un_side.jpg",
-        "demoVideo": "\"Xianyun: A New Stage\"",
+        "demoVideo": "",
         "region": "LIYUE"
     },
     {
@@ -109,7 +109,7 @@
         "description": "The owner of Bubu Pharmacy in Liyue Harbor. He is rarely seen without his talking white snake, Changsheng.",
         "image": "images/genshinImpact/mainImages/bai_chju_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/bai_chu_side.png",
-        "demoVideo": "\"Baizhu: The Universal Purveyor\"",
+        "demoVideo": "",
         "region": "LIYUE"
     },
     {
@@ -117,7 +117,7 @@
         "description": "A yaksha adeptus who defends Liyue. Also heralded as the \"Conqueror of Demons\" and \"Vigilant Yaksha\".",
         "image": "images/genshinImpact/mainImages/syao_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/xiao_side.jpg",
-        "demoVideo": "\"Xiao: A-whirl in the Night\"",
+        "demoVideo": "",
         "region": "LIYUE"
     },
     {
@@ -125,7 +125,7 @@
         "description": "A mysterious person who claims to work for the Ministry of Civil Affairs. She is the owner of the Yanshang Teahouse.",
         "image": "images/genshinImpact/mainImages/elan_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/elan_side.jpg",
-        "demoVideo": "\"Yelan: Shadow in the Rain\"",
+        "demoVideo": "",
         "region": "LIYUE"
     },
     {
@@ -133,7 +133,7 @@
         "description": "The 77th Director of the Wangsheng Funeral Parlor, a person vital to managing Liyue's funerary affairs.",
         "image": "images/genshinImpact/mainImages/hu_tao_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/hu_tao_side.jpg",
-        "demoVideo": "\"Hu Tao: Let the Living Beware\"",
+        "demoVideo": "",
         "region": "LIYUE"
     },
     {
@@ -141,7 +141,7 @@
         "description": "An adepti disciple with a mysterious past. She was raised by Cloud Retainer.",
         "image": "images/genshinImpact/mainImages/shen_he_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/shen_he_side.jpg",
-        "demoVideo": "\"Shenhe: A Lonesome Transcendence\"",
+        "demoVideo": "",
         "region": "LIYUE"
     },
     {
@@ -149,7 +149,7 @@
         "description": "The Yuheng of the Liyue Qixing. She is a skeptic of the gods and believes that humanity should determine its own future.",
         "image": "images/genshinImpact/mainImages/ke_cin_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/ke_cin_side.jpg",
-        "demoVideo": "\"Keqing: Starward Sword\"",
+        "demoVideo": "",
         "region": "LIYUE"
     },
     {
@@ -157,7 +157,7 @@
         "description": "A zombie resurrected by the adepti. She works at the Bubu Pharmacy and has a poor memory.",
         "image": "images/genshinImpact/mainImages/ci_ci_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/qi_qi_side.png",
-        "demoVideo": "\"Qiqi: An Icy Resolution\"",
+        "demoVideo": "",
         "region": "LIYUE"
     },
     {
@@ -165,7 +165,7 @@
         "description": "The Acting Grand Master of the Knights of Favonius. She is always busy with her duties and maintains the peace in Mondstadt.",
         "image": "images/genshinImpact/mainImages/jean_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/jean_side.jpg",
-        "demoVideo": "\"Jean: The Dandelion Knight\"",
+        "demoVideo": "",
         "region": "MONSTADT"
     },
     {
@@ -173,7 +173,7 @@
         "description": "The tycoon of a winery empire in Mondstadt, unparalleled in every possible way.",
         "image": "images/genshinImpact/mainImages/diluc_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/diluc_side.jpg",
-        "demoVideo": "\"Diluc: The Dark Side of Dawn\"",
+        "demoVideo": "",
         "region": "MONSTADT"
     },
     {
@@ -181,7 +181,7 @@
         "description": "A synthetic human made by the alchemist Rhinedottir, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius.",
         "image": "images/genshinImpact/mainImages/albedo_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/albedo_side.jpg",
-        "demoVideo": "\"Albedo: Contemplation in Chalk\"",
+        "demoVideo": "video/genshinImpact/albedo_demo.mp4",
         "region": "MONSTADT"
     },
     {
@@ -189,7 +189,7 @@
         "description": "The Spindrift Knight, a scion of the old aristocracy, and the Captain of the Knights of Favonius Reconnaissance Company. The reason for her joining the Knights remains a mystery.",
         "image": "images/genshinImpact/mainImages/eula_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/eula_side.png",
-        "demoVideo": "\"Eula: Flickering Candlelight\"",
+        "demoVideo": "video/genshinImpact/eula_demo.mp4",
         "region": "MONSTADT"
     },
     {
@@ -197,7 +197,7 @@
         "description": "An energetic and outgoing girl, Klee is the daughter of the intrepid and often-destructive adventurer Alice. She is a member of the Knights of Favonius, and has a penchant for bombs and explosives.",
         "image": "images/genshinImpact/mainImages/klee_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/klee_side.jpg",
-        "demoVideo": "\"Klee: Jumpy Dumpty\"",
+        "demoVideo": "video/genshinImpact/klee_demo.mp4",
         "region": "MONSTADT"
     },
     {
@@ -205,7 +205,7 @@
         "description": "A mysterious young astrologer who has taken up residence in Mondstadt to avoid her master. She is knowledgeable and prideful, but also struggles with her finances.",
         "image": "images/genshinImpact/mainImages/mona_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/mona_side.jpg",
-        "demoVideo": "\"Mona: Stellaris Phantasm\"",
+        "demoVideo": "video/genshinImpact/mona_demo.mp4",
         "region": "MONSTADT"
     },
     {
@@ -213,7 +213,7 @@
         "description": "A bard that came to Mondstadt from an unknown place. He sometimes sings outdated songs, and other times he sings new songs that have never been heard of before.",
         "image": "images/genshinImpact/mainImages/venti_main.jpg",
         "cardImage": "images/genshinImpact/sideImages/venti_side.png",
-        "demoVideo": "\"Venti: The Skyward Sonnet\"",
+        "demoVideo": "video/genshinImpact/venti_demo.mp4",
         "region": "MONSTADT"
     },
     {
@@ -221,7 +221,7 @@
         "description": "The vessel of Buer, the current Dendro Archon. She is a gentle and kind-hearted deity who seeks to understand and protect her people.",
         "image": "images/genshinImpact/mainImages/nahida_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/2c/b8/7a/2cb87a1a0fde7a90b3969168f07d2c36.jpg",
-        "demoVideo": "\"Nahida: Withering Away\"",
+        "demoVideo": "",
         "region": "SUMERU"
     },
     {
@@ -229,7 +229,7 @@
         "description": "A young researcher well-versed in botany who serves as a Forest Watcher in Avidya Forest. He is a warm and helpful person with a passion for knowledge.",
         "image": "images/genshinImpact/mainImages/tignari_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/4a/5b/1d/4a5b1dd66d787d559c5e31b6732a3f78.jpg",
-        "demoVideo": "\"Tighnari: Plant Patrol\"",
+        "demoVideo": "",
         "region": "SUMERU"
     },
     {
@@ -237,7 +237,7 @@
         "description": "The General Mahamatra of the Sumeru Akademiya, he is a stoic and diligent leader who strikes fear into the hearts of researchers.",
         "image": "images/genshinImpact/mainImages/saino_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/f7/c3/b7/f7c3b778747474a543313437299a9b6c.jpg",
-        "demoVideo": "\"Cyno: Scales of Judgment\"",
+        "demoVideo": "",
         "region": "SUMERU"
     },
     {
@@ -245,7 +245,7 @@
         "description": "The Star of the Zubayr Theater, Nilou is a gentle and graceful dancer who captivates audiences with her performances.",
         "image": "images/genshinImpact/mainImages/nilu_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/3b/68/76/3b68763e1e23363318b95925916c4f0f.jpg",
-        "demoVideo": "\"Nilou: Dance of the Lotus\"",
+        "demoVideo": "",
         "region": "SUMERU"
     },
     {
@@ -253,7 +253,7 @@
         "description": "A mysterious wanderer with a past shrouded in secrecy. He is sharp-tongued but has a kind heart.",
         "image": "images/genshinImpact/mainImages/scaramucha_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/f1/85/3c/f1853c4578e937e721a634423b9766a2.jpg",
-        "demoVideo": "\"Wanderer: Of Buer and Ballads\"",
+        "demoVideo": "",
         "region": "SUMERU"
     },
     {
@@ -261,7 +261,7 @@
         "description": "A member of the Eremites, a mercenary organization in Sumeru. She is a fierce and loyal warrior known as the \"Flame-Mane\".",
         "image": "images/genshinImpact/mainImages/dehiya_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/e7/9c/0b/e79c0b78d21c3b46979603e4b7c8f2b7.jpg",
-        "demoVideo": "\"Dehya: The Fiery Lioness\"",
+        "demoVideo": "",
         "region": "SUMERU"
     },
     {
@@ -269,7 +269,7 @@
         "description": "The current scribe of the Sumeru Akademiya, a rational and intelligent man who values knowledge above all else.",
         "image": "images/genshinImpact/mainImages/al_haitam_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/8a/1c/2f/8a1c2f90a1d6a7791439243b74332426.jpg",
-        "demoVideo": "\"Alhaitham: The Scribe of Kings\"",
+        "demoVideo": "",
         "region": "SUMERU"
     },
     {
@@ -277,7 +277,7 @@
         "description": "The former Hydro Archon of Fontaine. She is a dramatic and flamboyant figure who loves to be the center of attention, but also carries a heavy burden.",
         "image": "images/genshinImpact/mainImages/furina_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/9e/7b/07/9e7b07e7b165b6f3c4c9d53c65c2b04f.jpg",
-        "demoVideo": "\"Furina: All the World's a Stage\"",
+        "demoVideo": "",
         "region": "FONTAINE"
     },
     {
@@ -285,7 +285,7 @@
         "description": "The Iudex of Fontaine and the leader of the Marechaussee Phantom. He is a calm, impartial, and powerful figure who judges both humans and gods.",
         "image": "images/genshinImpact/mainImages/nevilett_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/9e/d4/7b/9ed47b2e9d80d2208d1a12e2c071d7c3.jpg",
-        "demoVideo": "\"Neuvillette: To the Risers of the Tide\"",
+        "demoVideo": "",
         "region": "FONTAINE"
     },
     {
@@ -293,7 +293,7 @@
         "description": "A celebrated magician in Fontaine, known for his dazzling performances and charismatic personality. He works closely with his sister, Lynette.",
         "image": "images/genshinImpact/mainImages/lini_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/5a/8a/36/5a8a36c84b42b6a7b7b1b3b3b4b4b4d6.jpg",
-        "demoVideo": "\"Lyney: The Great Magician\"",
+        "demoVideo": "",
         "region": "FONTAINE"
     },
     {
@@ -301,7 +301,7 @@
         "description": "The administrator of the Fortress of Meropide, Wriothesley is a stern and just leader who maintains order in the underwater prison.",
         "image": "images/genshinImpact/mainImages/rizly_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/3d/8a/3b/3d8a3b0b3b3b3b3b3b3b3b3b3b3b3b3b.jpg",
-        "demoVideo": "\"Wriothesley: The Duke of Meropide\"",
+        "demoVideo": "",
         "region": "FONTAINE"
     },
     {
@@ -309,7 +309,7 @@
         "description": "The president of the Spina di Rosula, Navia is a resourceful and determined leader who is dedicated to helping the people of Fontaine.",
         "image": "images/genshinImpact/mainImages/naviya_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/7b/0b/0b/7b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b.jpg",
-        "demoVideo": "\"Navia: The Rose of the Spina\"",
+        "demoVideo": "",
         "region": "FONTAINE"
     },
     {
@@ -317,7 +317,7 @@
         "description": "A Champion Duelist in Fontaine, Clorinde is a skilled and honorable warrior who upholds justice.",
         "image": "images/genshinImpact/mainImages/klorinda_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/2c/3d/9e/2c3d9e3b3b3b3b3b3b3b3b3b3b3b3b3b.jpg",
-        "demoVideo": "\"Clorinde: The Hunter's Blade\"",
+        "demoVideo": "",
         "region": "FONTAINE"
     },
     {
@@ -325,15 +325,15 @@
         "description": "The head nurse of the Fortress of Meropide, Sigewinne is a kind and caring Melusine who looks after the well-being of the inmates.",
         "image": "images/genshinImpact/mainImages/sandzhvin_main.jpg",
         "cardImage": "https://i.pinimg.com/564x/a2/7b/8b/a27b8b3b3b3b3b3b3b3b3b3b3b3b3b3b.jpg",
-        "demoVideo": "\"Sigewinne: The Little Wonder\"",
+        "demoVideo": "",
         "region": "FONTAINE"
     },
     {
         "name": "Emilie",
         "description": "A renowned perfumer in Fontaine, Emilie is known for her exquisite fragrances and her elegant demeanor.",
         "image": "images/genshinImpact/mainImages/emiliya_main.jpg",
-        "cardImage": "https://i.pinimg.com/564x/b3/b3/b3/b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3.jpg",
-        "demoVideo": "\"Emilie: The Scent of a Memory\"",
+        "cardImage": "https://i.pinimg.com/564x/b3/b3/b3/b3b3b3b3b3b3b3b3b3b3b3b3.jpg",
+        "demoVideo": "",
         "region": "FONTAINE"
     },
     {
