@@ -244,8 +244,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 regions = ['MONSTADT', 'LIYUE', 'INAZUMA', 'SUMERU', 'FONTAINE', 'NATLAN'];
                 defaultRegionName = 'MONSTADT';
             } else if (game === 'honkai_star_rail') {
-                regions = ['Astral Express', 'Herta Space Station', 'Jarilo-VI', 'The Xianzhou Luofu', 'Penacony', 'Amphoreus'];
-                defaultRegionName = 'Astral Express';
+                regions = ['Destruction', 'Hunt', 'Erudition', 'Harmony', 'Nihility', 'Preservation', 'Abundance', 'Memory'];
+                defaultRegionName = 'Destruction';
             } else {
                 regions = [...new Set(allCharacters.map(char => char.region))];
                 defaultRegionName = (game === 'zenless_zone_zero') ? 'New Eridu' : regions[0];
