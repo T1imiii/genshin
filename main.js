@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const backgroundContainer = document.querySelector('#characters-page .background-container');
     const root = document.documentElement;
 
+    const newsFeedEl = document.querySelector('#news-page .news-feed');
+
     // Video Modal Elements
     const videoModal = document.getElementById('video-modal');
     const videoModalOverlay = document.querySelector('.video-modal-overlay');
@@ -26,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentCharacters = [];
     let currentGame = 'characters';
     const gameDataCache = {};
+    let newsLoaded = false;
 
     // --- CORE PAGE NAVIGATION ---
     function switchPage(targetPageId, game = null) {
@@ -39,12 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.top-nav a[data-target="home"]').classList.add('active');
         } else if (targetPageId === 'characters-page') {
             charactersLink.classList.add('active');
+        } else if (targetPageId === 'news-page') {
+            const newsLink = document.querySelector('.top-nav a[data-target="news"]');
+            if(newsLink) newsLink.classList.add('active');
         }
 
         scrollIndicator.style.display = targetPageId === 'characters-page' ? 'block' : 'none';
 
         if (targetPageId === 'characters-page' && game) {
             initializeCharactersPage(game);
+        }
+        if (targetPageId === 'news-page') {
+            initializeNewsPage();
         }
     }
 
@@ -110,6 +119,96 @@ document.addEventListener('DOMContentLoaded', () => {
             root.style.setProperty('--dynamic-border-color', 'rgba(255, 255, 255, 0.1)');
         }
     }
+
+    // --- NEWS PAGE LOGIC (VK INTEGRATION) ---
+    const VK_SERVICE_KEY = 'd2c88a3bd2c88a3bd2c88a3b7fd1f2e7a9dd2c8d2c88a3bba07cfabe2eecc692b1e3731';
+    const VK_GROUP_ID = '232798999';
+
+    async function initializeNewsPage() {
+        if (newsLoaded) return; // Don't reload if already loaded
+
+        newsFeedEl.innerHTML = '<p>Loading news...</p>';
+
+        // SECURITY WARNING: The service access key is exposed here. This is insecure for production.
+        // A secure backend proxy is the recommended approach.
+        const API_URL = `https://api.vk.com/method/wall.get?owner_id=-${VK_GROUP_ID}&count=20&extended=1&access_token=${VK_SERVICE_KEY}&v=5.199`;
+
+        try {
+            // VK API requires a script tag to be added for JSONP.
+            await new Promise((resolve, reject) => {
+                const script = document.createElement('script');
+                const callbackName = 'vkCallback';
+                window[callbackName] = (data) => {
+                    delete window[callbackName];
+                    document.body.removeChild(script);
+                    if (data.response) {
+                        renderPosts(data.response);
+                        resolve();
+                    } else {
+                        console.error('VK API Error:', data.error);
+                        reject(new Error(data.error.error_msg));
+                    }
+                };
+                script.src = `${API_URL}&callback=${callbackName}`;
+                script.onerror = reject;
+                document.body.appendChild(script);
+            });
+            newsLoaded = true;
+        } catch (error) {
+            console.error('Failed to fetch VK news:', error);
+            newsFeedEl.innerHTML = `<p>Error loading news. Please check the console for details.</p>`;
+        }
+    }
+
+    function renderPosts(response) {
+        const posts = response.items;
+        const groupInfo = response.groups[0];
+
+        if (!posts || posts.length === 0) {
+            newsFeedEl.innerHTML = '<p>No news to display.</p>';
+            return;
+        }
+        
+        let feedHTML = '';
+        posts.forEach(post => {
+            const postDate = new Date(post.date * 1000).toLocaleString();
+            const postText = post.text.replace(/\n/g, '<br>');
+
+            let attachmentsHTML = '';
+            if (post.attachments && post.attachments.length > 0) {
+                attachmentsHTML += '<div class="post-attachments">';
+                post.attachments.forEach(attachment => {
+                    if (attachment.type === 'photo') {
+                        const bestSize = attachment.photo.sizes.sort((a, b) => b.width - a.width)[0];
+                        attachmentsHTML += `<a href="${bestSize.url}" target="_blank"><img src="${bestSize.url}" alt="Post attachment"></a>`;
+                    }
+                });
+                attachmentsHTML += '</div>';
+            }
+
+            feedHTML += `
+                <div class="post-card">
+                    <div class="post-header">
+                        <img src="${groupInfo.photo_100}" alt="${groupInfo.name}" class="post-avatar">
+                        <span class="post-author">${groupInfo.name}</span>
+                    </div>
+                    <p class="post-text">${postText}</p>
+                    ${attachmentsHTML}
+                    <div class="post-footer">
+                        <div class="post-stats">
+                            <span class="post-stat"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>${post.likes.count}</span>
+                            <span class="post-stat"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>${post.comments.count}</span>
+                            <span class="post-stat"><svg viewBox="0 0 24 24"><path d="M7 14l5-5 5 5H7z"/></svg>${post.reposts.count}</span>
+                        </div>
+                        <div class="post-date">${postDate}</div>
+                    </div>
+                </div>
+            `;
+        });
+
+        newsFeedEl.innerHTML = feedHTML;
+    }
+
 
     // --- VIDEO MODAL LOGIC ---
     function openVideoModal(src) {
@@ -240,6 +339,8 @@ document.addEventListener('DOMContentLoaded', () => {
             switchPage('characters-page', game);
         } else if (targetPage === 'home') {
             switchPage('home-page');
+        } else if (targetPage === 'news') {
+            switchPage('news-page');
         }
     });
 

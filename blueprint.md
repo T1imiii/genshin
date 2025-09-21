@@ -1,51 +1,55 @@
 
-# Project Blueprint: Genshin Impact Character Scroller
+# Project Blueprint: Hoyoverse Universe Explorer
 
 ## Overview
 
-This project is a single-page web application that showcases characters from the game Genshin Impact. The application now includes a "HOME" page with an introduction and a "CHARACTERS" page with a scroll-based interaction.
+This project is a single-page web application that showcases characters from various Hoyoverse games (Genshin Impact, Honkai Star Rail, Zenless Zone Zero). The application features a "HOME" introduction page, a "CHARACTERS" browser, and now, a "NEWS" feed integrated with a VKontakte group.
 
 ## Design and Style
 
-*   **Theme:** Dark, modern, and inspired by the Genshin Impact UI.
+*   **Theme:** Dark, modern, and aesthetically inspired by the Hoyoverse game UIs.
 *   **Layout:**
-    *   A fixed header containing the game logo and top navigation links.
-    *   A main content area that switches between the "HOME" and "CHARACTERS" pages.
+    *   A fixed header containing the logo and top navigation.
+    *   A main content area that dynamically switches between the "HOME", "CHARACTERS", and "NEWS" pages.
 
 ### HOME Page
-*   **Background:** A full-screen background image.
-*   **Content:** An "About Us" section with descriptive text and a "Start Browsing" button that navigates to the "CHARACTERS" page.
-*   **Layout:** Retains the header and left social sidebar for consistency.
+*   **Background:** A full-screen, atmospheric background image.
+*   **Content:** An introduction to the purpose of the site with a "Start Browsing" button to navigate to the character browser.
 
 ### CHARACTERS Page
-*   **Layout:** A main content area divided into three columns:
-    1.  **Left Sidebar:** A scrollable list of character cards.
-    2.  **Center Content:** A large area to display the details of the selected character.
+*   **Layout:** A three-column design:
+    1.  **Left Sidebar:** A scrollable list of character cards for the selected game and region.
+    2.  **Center Content:** A large, detailed view of the selected character, including their name, description, and a button to watch a demo video.
     3.  **Right Sidebar:** A vertical navigation bar for different game regions.
-*   **Visuals:** High-quality images, subtle textures, and interactive hover effects.
+*   **Dynamic Theming:** The UI accent colors dynamically change based on the dominant color of the active character's artwork.
+
+### NEWS Page
+*   **Layout:** A single, scrollable column layout that displays a feed of news posts.
+*   **Content:** Posts are fetched in real-time from a specified VKontakte group, displaying text and any attached images.
+*   **Style:** Each post is styled as a "card" to fit the application's modern aesthetic.
 
 ## Features
 
-*   **Page Navigation:** Users can switch between the "HOME" and "CHARACTERS" pages using the header navigation.
-*   **"About Us" Section:** The HOME page provides introductory information.
-*   **Call to Action:** A "Start Browsing" button on the HOME page directs users to the CHARACTERS page.
-*   **Dynamic Character Data:** The CHARACTERS page uses a JavaScript array to store and display character information.
-*   **Scroll-based Character Switching:** On the CHARACTERS page, scrolling the character list updates the main display.
-*   **Active Character Highlight:** The currently viewed character is highlighted in the list.
-*   **Responsive Design:** The layout adapts to different screen sizes.
+*   **Multi-Page Navigation:** Users can switch between the "HOME", "CHARACTERS", and "NEWS" sections.
+*   **Multi-Game Support:** The character browser is organized by game (Genshin Impact, Honkai Star Rail, Zenless Zone Zero) and further by in-game regions.
+*   **Dynamic Character Loading:** Character data is fetched from local JSON files.
+*   **Interactive Character Switching:** Users can switch between characters by scrolling or clicking.
+*   **Video Modal:** A modal window to watch character demo videos.
+*   **VKontakte Integration:** The "NEWS" page displays a live feed of posts from a VKontakte group.
+*   **Responsive Design:** The layout is designed to adapt to different screen sizes.
 
-## Current Plan
+## Current Plan: Add VK News Feed
 
-1.  **Update HTML Structure:**
-    *   Add a new `<section>` for the "HOME" page.
-    *   Wrap the existing "CHARACTERS" page content in its own `<section>`.
-    *   Add content for the "HOME" page, including text and a button.
-2.  **Update CSS Styles:**
-    *   Add styles for the "HOME" page layout, background, and content.
-    *   Create a utility class to show/hide the different page sections.
-3.  **Update JavaScript Logic:**
-    *   Implement a function to handle showing and hiding the "HOME" and "CHARACTERS" page sections.
-    *   Add event listeners to the header navigation links ("HOME", "CHARACTERS") to switch pages.
-    *   Add an event listener to the "Start Browsing" button to navigate to the "CHARACTERS" page.
-    *   Ensure the "HOME" page is the default view on application load.
-    *   Verify that the existing functionality of the "CHARACTERS" page is not affected.
+1.  **Update `blueprint.md`:** Reflect the addition of the NEWS page and VKontakte integration. (Complete)
+2.  **Modify `index.html`:**
+    *   Add a `<section id="news-page" class="page">` to hold the news feed content.
+    *   Ensure the "NEWS" link in the top navigation is correctly configured to switch to this new page.
+3.  **Enhance `main.js`:**
+    *   Add `news-page` to the page switching logic.
+    *   Create a new function `initializeNewsPage()` that will be called when the user navigates to the "NEWS" page.
+    *   This function will perform a `fetch` request to the VKontakte API's `wall.get` method using the provided service key and group ID.
+    *   **Security Note:** For this implementation, the service key will be included directly in the client-side request. For a production environment, this is highly insecure. The recommended approach would be to set up a proxy server (e.g., using a Firebase Function) to securely handle the API key.
+    *   Develop a function `renderPosts(posts)` that takes the API response and generates the HTML for the news feed, including text and images.
+4.  **Update `style.css`:**
+    *   Add styling for the `#news-page` container.
+    *   Create styles for the individual news post cards (`.post-card`), including layout for the post text, date, and images, ensuring it matches the overall dark, modern theme of the site.

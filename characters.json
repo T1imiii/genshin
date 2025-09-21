@@ -343,5 +343,61 @@
         "cardImage": "images/genshinImpact/sideImages/escoffier_side.jpg",
         "demoVideo": "",
         "region": "FONTAINE"
+    },
+    {
+        "name": "KINICH",
+        "description": "A new character from the vibrant region of Natlan, awaiting discovery.",
+        "image": "images/genshinImpact/mainImages/kinich_main.jpg",
+        "cardImage": "",
+        "demoVideo": "",
+        "region": "NATLAN"
+    },
+    {
+        "name": "MUALANI",
+        "description": "A new character from the vibrant region of Natlan, awaiting discovery.",
+        "image": "images/genshinImpact/mainImages/mualani_main.jpg",
+        "cardImage": "",
+        "demoVideo": "",
+        "region": "NATLAN"
+    },
+    {
+        "name": "XILONEN",
+        "description": "A new character from the vibrant region of Natlan, awaiting discovery.",
+        "image": "images/genshinImpact/mainImages/shilonen_main.jpg",
+        "cardImage": "",
+        "demoVideo": "",
+        "region": "NATLAN"
+    },
+    {
+        "name": "CHASCA",
+        "description": "A new character from the vibrant region of Natlan, awaiting discovery.",
+        "image": "images/genshinImpact/mainImages/chaska_main.jpg",
+        "cardImage": "",
+        "demoVideo": "",
+        "region": "NATLAN"
+    },
+    {
+        "name": "MAWUIKA",
+        "description": "A new character from the vibrant region of Natlan, awaiting discovery.",
+        "image": "images/genshinImpact/mainImages/mavuika_main.jpg",
+        "cardImage": "",
+        "demoVideo": "",
+        "region": "NATLAN"
+    },
+    {
+        "name": "CITLALI",
+        "description": "A new character from the vibrant region of Natlan, awaiting discovery.",
+        "image": "images/genshinImpact/mainImages/sitlali_main.jpg",
+        "cardImage": "",
+        "demoVideo": "",
+        "region": "NATLAN"
+    },
+    {
+        "name": "VARESA",
+        "description": "A new character from the vibrant region of Natlan, awaiting discovery.",
+        "image": "images/genshinImpact/mainImages/varesa_main.jpg",
+        "cardImage": "",
+        "demoVideo": "",
+        "region": "NATLAN"
     }
 ]

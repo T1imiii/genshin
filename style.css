@@ -4,12 +4,8 @@
     --accent-color: #bf7bf1;
     --accent-gradient: linear-gradient(to right, #d900ff, transparent);
     --panel-bg-color: rgba(10, 10, 20, 0.5);
-    --border-color: rgba(255, 255, 255, 0.1); /* Static fallback border color */
-
-    /* These will be dynamically updated by JS */
-    --character-card-active-bg: rgba(191, 123, 241, 0.2);
-    --character-card-glow-color: rgba(191, 123, 241, 0.6);
-    --dynamic-border-color: var(--border-color); 
+    --border-color: rgba(255, 255, 255, 0.1);
+    --text-secondary-color: #aaa;
 }
 
 /* General Styling */
@@ -42,6 +38,7 @@ main {
     position: absolute;
     top: 0;
     left: 0;
+    overflow-y: auto; /* Allow scrolling on pages */
 }
 
 .page.active {
@@ -185,6 +182,7 @@ header {
 #start-browsing-btn:hover { transform: translateY(-3px); box-shadow: 0 0 25px 10px var(--character-card-glow-color); }
 
 /* --- PAGE 2: CHARACTERS --- */
+#characters-page { overflow: hidden; } /* Prevent internal scroll */
 #characters-page .background-container {
     display: none; /* Hide by default */
     position: fixed; /* Position relative to viewport, behind everything */
@@ -357,6 +355,107 @@ header {
 #characters-page .side-nav a:first-child { border-top: none; }
 #characters-page .side-nav a:hover { background-color: rgba(255, 255, 255, 0.1); }
 #characters-page .side-nav a.active { background: var(--accent-gradient); }
+
+/* --- PAGE 3: NEWS --- */
+#news-page {
+    justify-content: center;
+}
+
+.news-feed {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.post-card {
+    background-color: var(--panel-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(5px);
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.post-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.post-author {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.post-text {
+    line-height: 1.7;
+    white-space: pre-wrap; /* Preserve line breaks from VK post */
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.post-attachments {
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.post-attachments img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.post-stats {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.post-stat {
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary-color);
+    font-size: 0.9rem;
+}
+
+.post-stat svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-secondary-color);
+    margin-right: 0.5rem;
+    transition: fill 0.3s;
+}
+
+.post-stat:hover svg {
+    fill: var(--accent-color);
+}
+
+.post-date {
+    font-size: 0.85rem;
+    color: var(--text-secondary-color);
+}
 
 /* --- VIDEO MODAL --- */
 .video-modal { 
