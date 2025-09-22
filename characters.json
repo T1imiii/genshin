@@ -220,7 +220,7 @@
         "name": "Nahida",
         "description": "The vessel of Buer, the current Dendro Archon. She is a gentle and kind-hearted deity who seeks to understand and protect her people.",
         "image": "images/genshinImpact/mainImages/nahida_main.jpg",
-        "cardImage": "https://i.pinimg.com/564x/2c/b8/7a/2cb87a1a0fde7a90b3969168f07d2c36.jpg",
+        "cardImage": "images/genshinImpact/sideImages/nahida_side.jpg",
         "demoVideo": "",
         "region": "SUMERU"
     },
@@ -228,7 +228,7 @@
         "name": "Tighnari",
         "description": "A young researcher well-versed in botany who serves as a Forest Watcher in Avidya Forest. He is a warm and helpful person with a passion for knowledge.",
         "image": "images/genshinImpact/mainImages/tignari_main.jpg",
-        "cardImage": "https://i.pinimg.com/564x/4a/5b/1d/4a5b1dd66d787d559c5e31b6732a3f78.jpg",
+        "cardImage": "images/genshinImpact/sideImages/tignari_main.jpg",
         "demoVideo": "",
         "region": "SUMERU"
     },
@@ -236,7 +236,7 @@
         "name": "Cyno",
         "description": "The General Mahamatra of the Sumeru Akademiya, he is a stoic and diligent leader who strikes fear into the hearts of researchers.",
         "image": "images/genshinImpact/mainImages/saino_main.jpg",
-        "cardImage": "https://i.pinimg.com/564x/f7/c3/b7/f7c3b778747474a543313437299a9b6c.jpg",
+        "cardImage": "images/genshinImpact/sideImages/syno_side.jpg",
         "demoVideo": "",
         "region": "SUMERU"
     },
@@ -244,7 +244,7 @@
         "name": "Nilou",
         "description": "The Star of the Zubayr Theater, Nilou is a gentle and graceful dancer who captivates audiences with her performances.",
         "image": "images/genshinImpact/mainImages/nilu_main.jpg",
-        "cardImage": "https://i.pinimg.com/564x/3b/68/76/3b68763e1e23363318b95925916c4f0f.jpg",
+        "cardImage": "images/genshinImpact/sideImages/nilu_side.jpg",
         "demoVideo": "",
         "region": "SUMERU"
     },
@@ -252,7 +252,7 @@
         "name": "Wanderer",
         "description": "A mysterious wanderer with a past shrouded in secrecy. He is sharp-tongued but has a kind heart.",
         "image": "images/genshinImpact/mainImages/scaramucha_main.jpg",
-        "cardImage": "https://i.pinimg.com/564x/f1/85/3c/f1853c4578e937e721a634423b9766a2.jpg",
+        "cardImage": "images/genshinImpact/sideImages/wanderer_side.jpg",
         "demoVideo": "",
         "region": "SUMERU"
     },
@@ -260,7 +260,7 @@
         "name": "Dehya",
         "description": "A member of the Eremites, a mercenary organization in Sumeru. She is a fierce and loyal warrior known as the \"Flame-Mane\".",
         "image": "images/genshinImpact/mainImages/dehiya_main.jpg",
-        "cardImage": "https://i.pinimg.com/564x/e7/9c/0b/e79c0b78d21c3b46979603e4b7c8f2b7.jpg",
+        "cardImage": "images/genshinImpact/sideImages/dehia_side.jpg",
         "demoVideo": "",
         "region": "SUMERU"
     },
@@ -268,7 +268,7 @@
         "name": "Alhaitham",
         "description": "The current scribe of the Sumeru Akademiya, a rational and intelligent man who values knowledge above all else.",
         "image": "images/genshinImpact/mainImages/al_haitam_main.jpg",
-        "cardImage": "https://i.pinimg.com/564x/8a/1c/2f/8a1c2f90a1d6a7791439243b74332426.jpg",
+        "cardImage": "images/genshinImpact/sideImages/al_haitam_side.jpg",
         "demoVideo": "",
         "region": "SUMERU"
     },
