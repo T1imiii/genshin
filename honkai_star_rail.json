@@ -2,71 +2,71 @@
     {
         "name": "MIDEJ",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/midei_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/midei_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/midei_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/midei_side.webp",
         "region": "Destruction"
     },
     {
         "name": "PHAENON",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/faenon_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/faenon_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/faenon_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/faenon_side.webp",
         "region": "Destruction"
     },
     {
         "name": "SABER",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/seiber_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/saber_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/seiber_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/saber_side.webp",
         "region": "Destruction"
     },
     {
         "name": "YUNLI",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/unli_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/unli_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/unli_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/unli_side.webp",
         "region": "Destruction"
     },
     {
         "name": "JINGLIU",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/zcinlu_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/zcinli_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/zcinlu_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/zcinli_side.webp",
         "region": "Destruction"
     },
     {
         "name": "DAN HENG IMBIBITOR LUNAE",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/dan_hen_poghiratel_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/dan_hen_poghiratel_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/dan_hen_poghiratel_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/dan_hen_poghiratel_side.webp",
         "region": "Destruction"
     },
     {
         "name": "BLADE",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/blade_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/blade_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/blade_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/blade_side.webp",
         "region": "Destruction"
     },
     {
         "name": "CLARA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/klara_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/klara_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/klara_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/klara_side.webp",
         "region": "Destruction"
     },
     {
         "name": "FIREFLY",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/svetlyachok_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/svetlyachok_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/svetlyachok_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/svetlyachok_side.webp",
         "region": "Destruction"
     },
     {
         "name": "SEELE",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/seelle_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/seelle_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/seelle_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/seelle_side.webp",
         "region": "Hunt"
     },
     {
@@ -79,267 +79,267 @@
     {
         "name": "TOPAZ & NUMBY",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/topaz_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/topaz_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/topaz_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/topaz_side.webp",
         "region": "Hunt"
     },
     {
         "name": "DOCTOR RATIO",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/doctor_racio_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/doctor_racio_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/doctor_racio_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/doctor_racio_side.webp",
         "region": "Hunt"
     },
     {
         "name": "BOOTHILL",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/buthill_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/buthill_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/boothill_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/boothill_side.webp",
         "region": "Hunt"
     },
     {
         "name": "FEIXIAO",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/feixiao_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/fei_syao_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/feixiao_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/fei_syao_side.webp",
         "region": "Hunt"
     },
     {
         "name": "ARCHER",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/archer_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/archer_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/archer_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/archer_side.webp",
         "region": "Hunt"
     },
     {
         "name": "HIMEKO",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/himeko_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/himeko_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/himeko_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/himeko_side.webp",
         "region": "Erudition"
     },
     {
         "name": "JING YUAN",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/zcin_uan_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/zcin_uan_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/zcin_uan_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/zcin_uan_side.webp",
         "region": "Erudition"
     },
     {
         "name": "ARGENTI",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/argenti_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/argenti_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/argenti_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/argenti_side.webp",
         "region": "Erudition"
     },
     {
         "name": "YASHMA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/yashma_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/yashma_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/yashma_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/yashma_side.webp",
         "region": "Erudition"
     },
     {
         "name": "RAPPA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/rappa_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/rappa_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/rappa_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/rappa_side.webp",
         "region": "Erudition"
     },
     {
         "name": "GREAT HERTA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/gerta_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/gerta_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/gerta_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/gerta_side.webp",
         "region": "Erudition"
     },
     {
         "name": "ANAXA",
         "description": "Character description coming soon",
-        "image": "images/honkaiStarRail/mainImages/anaksa_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/anaksa_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/anaksa_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/anaksa_side.webp",
         "region": "Erudition"
     },
     {
         "name": "BRONYA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/bronya_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/bronya_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/bronya_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/bronya_side.webp",
         "region": "Harmony"
     },
     {
         "name": "RUAN MEI",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/ghuan_mei_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/ghuan_mei_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/ghuan_mei_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/ghuan_mei_side.webp",
         "region": "Harmony"
     },
     {
         "name": "SPARKLE",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/iscorka_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/iscorka_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/iscorka_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/iscorka_side.webp",
         "region": "Harmony"
     },
     {
         "name": "ROBIN",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/zaryanka_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/zaryanka_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/zaryanka_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/zaryanka_side.webp",
         "region": "Harmony"
     },
     {
         "name": "SUNDAY",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/voskresenie_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/voskresenie_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/voskresenie_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/voskresenie_side.webp",
         "region": "Harmony"
     },
     {
         "name": "TRIBBI",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/tribbi_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/tribbi_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/tribbi_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/tribbi_side.webp",
         "region": "Harmony"
     },
     {
         "name": "KERIDRA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/kerida_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/kerida_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/kerida_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/kerida_side.webp",
         "region": "Harmony"
     },
     {
         "name": "WELT",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/velt_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/velt_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/velt_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/velt_side.webp",
         "region": "Nihility"
     },
     {
         "name": "SILVER WOLF",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/silver_wolf_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/silver_wolf_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/silver_wolf_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/silver_wolf_side.webp",
         "region": "Nihility"
     },
     {
         "name": "KAFKA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/kafka_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/kafka_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/kafka_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/kafka_side.webp",
         "region": "Nihility"
     },
     {
         "name": "BLACK SWAN",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/black_lebed_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/black_lebed_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/black_lebed_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/black_lebed_side.webp",
         "region": "Nihility"
     },
     {
         "name": "ACHERON",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/aheron_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/aheron_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/aheron_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/aheron_side.webp",
         "region": "Nihility"
     },
     {
         "name": "JIAOQIU",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/czyaocu_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/czyao_cu_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/czyaocu_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/czyao_cu_side.webp",
         "region": "Nihility"
     },
     {
         "name": "FUGA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/fuga_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/fuga_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/fuga_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/fuga_side.webp",
         "region": "Nihility"
     },
     {
         "name": "CIFER",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/cifer_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/cifer_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/cifer_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/cifer_side.webp",
         "region": "Nihility"
     },
     {
         "name": "GISILENSA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/gisilensa_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/gisilensa_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/gisilensa_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/gisilensa_side.webp",
         "region": "Nihility"
     },
     {
         "name": "GEPARD",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/gepard_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/gepard_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/gepard_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/gepard_side.webp",
         "region": "Preservation"
     },
     {
         "name": "FU XUAN",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/fu_suan_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/fu_suan_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/fu_suan_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/fu_suan_side.webp",
         "region": "Preservation"
     },
     {
         "name": "AVENTURINE",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/avanturin_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/avanturin_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/avanturin_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/avanturin_side.webp",
         "region": "Preservation"
     },
     {
         "name": "BAILU",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/bailu_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/bailu_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/bailu_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/bailu_side.webp",
         "region": "Abundance"
     },
     {
         "name": "LUOCHA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/locha_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/locha_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/locha_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/locha_side.webp",
         "region": "Abundance"
     },
     {
         "name": "HUOHUO",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/hoho_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/hoho_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/hoho_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/hoho_side.webp",
         "region": "Abundance"
     },
     {
         "name": "LINSHA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/linsha_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/linsha_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/linsha_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/linsha_side.webp",
         "region": "Abundance"
     },
     {
         "name": "AGLAIA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/aglaya_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/aglaya_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/aglaya_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/aglaya_side.webp",
         "region": "Memory"
     },
     {
         "name": "CASTORIA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/kastoria_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/kastoriya_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/kastoria_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/kastoriya_side.webp",
         "region": "Memory"
     },
     {
         "name": "HYACINA",
         "description": "Character description coming soon.",
-        "image": "images/honkaiStarRail/mainImages/giacina_main.jpg",
-        "cardImage": "images/honkaiStarRail/sideImages/giacina_side.jpg",
+        "image": "images/honkaiStarRail/mainImages/giacina_main.webp",
+        "cardImage": "images/honkaiStarRail/sideImages/giacina_side.webp",
         "region": "Memory"
     }
 ]
